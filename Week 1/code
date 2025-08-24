@@ -1,0 +1,69 @@
+def print_board(board):
+    """Prints the Tic Tac Toe board."""
+    for row in board:
+        print(" | ".join(row))
+        print("-" * 9)
+
+def check_win(board, player):
+    """Checks if the current player has won."""
+    n = len(board)
+    # Check rows
+    for row in board:
+        if all(cell == player for cell in row):
+            return True
+    # Check columns
+    for col in range(n):
+        if all(board[row][col] == player for row in range(n)):
+            return True
+    # Check diagonals
+    if all(board[i][i] == player for i in range(n)) or \
+       all(board[i][n - 1 - i] == player for i in range(n)):
+        return True
+    return False
+
+def check_draw(board):
+    """Checks if the game is a draw."""
+    for row in board:
+        if " " in row:
+            return False
+    return True
+
+def tic_tac_toe():
+    """Runs the Tic Tac Toe game."""
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    players = ["X", "O"]
+    current_player = 0
+
+    while True:
+        print_board(board)
+        player = players[current_player]
+        print(f"Player {player}'s turn.")
+
+        while True:
+            try:
+                row = int(input("Enter row (0, 1, or 2): "))
+                col = int(input("Enter column (0, 1, or 2): "))
+                if 0 <= row < 3 and 0 <= col < 3 and board[row][col] == " ":
+                    board[row][col] = player
+                    break
+                else:
+                    print("Invalid move. Try again.")
+            except ValueError:
+                print("Invalid input. Please enter numbers.")
+
+        if check_win(board, player):
+            print_board(board)
+            print(f"Player {player} wins!")
+            break
+        elif check_draw(board):
+            print_board(board)1
+
+            print("It's a draw!")
+            break
+
+        current_player = (current_player + 1) % 2
+
+if __name__ == "__main__":
+    tic_tac_toe()
+
+print("Satish 1BM23CS306")
