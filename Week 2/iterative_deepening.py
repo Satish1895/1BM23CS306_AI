@@ -75,7 +75,7 @@ if len(start) == 9 and set(start) == set('012345678'):
         print("Solution found!")
         print("Moves:", ' '.join(result))
         print("Number of moves:", len(result))
-        print("1BM23CS307 Uzair\n")
+        print("1BM23CS306 Satish G K\n")
 
         current_state = start
         for i, move in enumerate(result, 1):
