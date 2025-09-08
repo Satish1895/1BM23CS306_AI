@@ -1,0 +1,74 @@
+Enter start state (e.g., 724506831): 123678405
+Start state:
+1 2 3
+6 7 8
+4   5
+
+Total states visited: 14
+Solution found!
+Moves: U L D R R U L D R
+Number of moves: 9
+1BM23CS306 Satish G K
+
+Move 1: U
+1 2 3
+6   8
+4 7 5
+
+g(n) = 1, h(n) = 8, f(n) = g(n) + h(n) = 9
+
+Move 2: L
+1 2 3
+  6 8
+4 7 5
+
+g(n) = 2, h(n) = 7, f(n) = g(n) + h(n) = 9
+
+Move 3: D
+1 2 3
+4 6 8
+  7 5
+
+g(n) = 3, h(n) = 6, f(n) = g(n) + h(n) = 9
+
+Move 4: R
+1 2 3
+4 6 8
+7   5
+
+g(n) = 4, h(n) = 5, f(n) = g(n) + h(n) = 9
+
+Move 5: R
+1 2 3
+4 6 8
+7 5  
+
+g(n) = 5, h(n) = 4, f(n) = g(n) + h(n) = 9
+
+Move 6: U
+1 2 3
+4 6  
+7 5 8
+
+g(n) = 6, h(n) = 3, f(n) = g(n) + h(n) = 9
+
+Move 7: L
+1 2 3
+4   6
+7 5 8
+
+g(n) = 7, h(n) = 2, f(n) = g(n) + h(n) = 9
+
+Move 8: D
+1 2 3
+4 5 6
+7   8
+
+g(n) = 8, h(n) = 1, f(n) = g(n) + h(n) = 9
+
+Move 9: R
+1 2 3
+4 5 6
+7 8  
+
+g(n) = 9, h(n) = 0, f(n) = g(n) + h(n) = 9
