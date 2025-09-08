@@ -1,0 +1,76 @@
+Enter start state (e.g., 724506831): 123450678
+Start state:
+1 2 3
+4 5  
+6 7 8
+
+Total states visited: 9504
+Solution found!
+Moves: D L L U R D R U L L D R R
+Number of moves: 13
+1BM23CS306 Satish G K
+
+Move 1: D
+1 2 3
+4 5 8
+6 7  
+
+Move 2: L
+1 2 3
+4 5 8
+6   7
+
+Move 3: L
+1 2 3
+4 5 8
+  6 7
+
+Move 4: U
+1 2 3
+  5 8
+4 6 7
+
+Move 5: R
+1 2 3
+5   8
+4 6 7
+
+Move 6: D
+1 2 3
+5 6 8
+4   7
+
+Move 7: R
+1 2 3
+5 6 8
+4 7  
+
+Move 8: U
+1 2 3
+5 6  
+4 7 8
+
+Move 9: L
+1 2 3
+5   6
+4 7 8
+
+Move 10: L
+1 2 3
+  5 6
+4 7 8
+
+Move 11: D
+1 2 3
+4 5 6
+  7 8
+
+Move 12: R
+1 2 3
+4 5 6
+7   8
+
+Move 13: R
+1 2 3
+4 5 6
+7 8  
