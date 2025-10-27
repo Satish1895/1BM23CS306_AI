@@ -1,0 +1,15 @@
+=== Knowledge Base in CNF ===
+(Food(x) ∨ Likes(John,x))
+Food(Apple)
+Food(Vegetable)
+∀x((Eats(x,y) ∧ ¬Killed(x)) ∨ Food(y))
+(Eats(Anil,Peanuts) ∧ Alive(Anil))
+∀x(Eats(Anil,y) ∨ Eats(Harry,y))
+(Alive(x) ∨ ¬Killed(x))
+(¬Killed(x) ∨ Alive(x))
+
+Negated Goal (for resolution): ¬Likes(John,Peanuts)
+
+Can we prove that John likes peanuts?
+Result: NO (cannot prove)
+Satish G K 1BM23CS306
